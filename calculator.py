@@ -74,3 +74,9 @@ if __name__ == "__main__":
     main()# TODO: Add more functions
 # TODO: Improve error handling
 # TODO: Add unit tests
+def factorial(n):
+    if n < 0:
+        raise ValueError('Factorial not defined for negative numbers')
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)

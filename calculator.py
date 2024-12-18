@@ -7,9 +7,7 @@ def subtract(a, b):
     return a - b
 
 def multiply(a, b):
-    # Bug: multiplicación incorrecta para números negativos
-    if a < 0 or b < 0:
-        return -(abs(a) * abs(b))  # Este es el bug
+    # Versión corregida que maneja correctamente los números negativos
     return a * b
 
 def divide(a, b):
